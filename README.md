@@ -5,7 +5,7 @@
 The purpose of the lab exercises of Embedded System Design Flow on Zynq is to walk you through a complete hardware and software processor system design. Each lab will build upon the previous lab. The following diagram represents the completed design of all the labs in this workshop (shown below).
 
 <p align="center">
-<img src ="/pics/Readme/Completed Design.JPG" width="80%" height="80%"/>
+<img src ="./pics/Readme/Completed Design.JPG" width="80%" height="80%"/>
 </p>
 <p align = "center">
 <i>Completed Design</i>
@@ -29,20 +29,20 @@ To use the source files for each of the labs in this workshop, you have to clone
   ```
 In the instructions for the labs;
 
-**{sources}** refers to the location where you will get the base files for the labs [here](https://github.com/wady100/Embedded-System-Design-Flow-on-Zynq/tree/2018.1/sources)
+**{sources}** refers to the location where you will get the base files for the labs [here](./sources)
 
 **{labs}** refers to the location which you will use as your workspace for the labs in the workshop
 
-**{labsolutions}** refers to [here](https://github.com/wady100/Embedded-System-Design-Flow-on-Zynq/tree/2018.1/labsolutions/embedded)
+**{labsolutions}** refers to [here](./labsolutions/embedded)
 
 ---
 **NOTE**
 
-Board support for the Zybo and PYNQ-Z2 are not included in Vivado 2018.1 by default. The relevant files need to be extracted and saved to:
+Board support for the Zybo, PYNQ-Z1 and PYNQ-Z2 are not included in Vivado 2018.2 by default. The relevant files need to be extracted and saved to:
 
  {Vivado installation}\data\boards\board_files\zynq
 
-These files can be downloaded from [/board_files](https://github.com/wady100/Embedded-System-Design-Flow-on-Zynq/tree/2018.1/board_files) where this material is hosted.
+These files can be downloaded from [/board_files](./board_files) where this material is hosted.
 
 ---
 
@@ -51,6 +51,8 @@ These files can be downloaded from [/board_files](https://github.com/wady100/Emb
 **Zybo**:  Make sure that the JP7 is set to select USB power, and JP5 is set to JTAG. Make sure that a micro-USB cable is connected to the JTAG PROG connector (next to the power supply connector). Turn ON the power.
 
 **ZedBoard**:  Make sure that two micro-usb cables are used between the PC and the PROG and the UART connectors of the board and that the board is placed in the JTAG mode (MIO6-MIO2 jumpers are in the Dn position). Turn ON the power.
+
+**PYNQ-Z1**:  Connect a micro USB from the board to the PC. Make sure that a jumper is connected to JTAG (between JP4_1 and JP4_2) and another one of them should be connected across the USB pins (between JP5_2 and JP5_3).
 
 **PYNQ-Z2**:  Connect a micro USB from the board to the PC. Make sure that a jumper is connected to JTAG (between JP1_1 and JP1_2) and another one of them should be connected across the USB pins (between J9_2 and J9_3).
 
@@ -65,7 +67,7 @@ These files can be downloaded from [/board_files](https://github.com/wady100/Emb
 
 
     <p align="center">
-    <img src ="/pics/Readme/l1view.JPG" width="40%" height="80%"/>
+    <img src ="./pics/Readme/l1view.JPG" width="40%" height="80%"/>
     </p>
     <p align = "center">
     <i>Processor Design of this Lab</i>
@@ -73,7 +75,7 @@ These files can be downloaded from [/board_files](https://github.com/wady100/Emb
 ### Lab 2
    This lab guides you through the process of extending the processing system you created in the previous lab by adding two GPIO (General Purpose Input/Output) IPs.
    <p align="center">
-   <img src ="/pics/Readme/l2view.jpg" width="80%" height="80%"/>
+   <img src ="./pics/Readme/l2view.jpg" width="80%" height="80%"/>
    </p>
    <p align = "center">
    <i>Extend the System from the Previous Lab</i>
@@ -86,7 +88,7 @@ These files can be downloaded from [/board_files](https://github.com/wady100/Emb
   You will extend the Lab 2 hardware design by creating and adding an AXI peripheral (refer to LED_IP in Figure 1) to the system, and connecting it to the LEDs on the Zynq board you are using.  You will use the IP Packager to generate the custom IP.    Next, you will connect the peripheral to the system and add pin location constraints to connect the LED display controller peripheral to the on-board LED display.  Finally, you will add BRAM Controller and BRAM before generating the bitstream.
 
   <p align="center">
-  <img src ="/pics/Readme/l3view.jpg" width="80%" height="80%"/>
+  <img src ="./pics/Readme/l3view.jpg" width="80%" height="80%"/>
   </p>
   <p align = "center">
   <i>Design updated from the previous lab</i>
@@ -105,7 +107,7 @@ These files can be downloaded from [/board_files](https://github.com/wady100/Emb
    You will use the hardware design created in lab 4 to use CPU’s private timer (see Figure).  You will develop the code to use it.
 
    <p align="center">
-   <img src ="/pics/Readme/l5view.jpg" width="80%" height="80%"/>
+   <img src ="./pics/Readme/l5view.jpg" width="80%" height="80%"/>
    </p>
    <p align = "center">
    <i>Final design</i>
