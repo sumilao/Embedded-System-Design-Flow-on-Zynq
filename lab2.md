@@ -14,7 +14,7 @@ After completing this lab, you will be able to:
 1. Open the previous project, or the lab1 project from the **{labsolutions}** directory, and save the project as lab2. Open the Block Design.
 1.	Start Vivado, if necessary, and open either the lab1 project (lab1.xpr) you created in the previous lab or from the **{labsolutions}** directory using the Open Project link in the Getting Started page.
 
-2.	Select **File > Save Project As…** to open the Save Project As dialog box. Enter lab2 as the project name.  Make sure that the Create Project Subdirectory option is checked, the project directory path is **{labs}** and click OK.
+2.	Select **File > Project > Save As…** to open the Save Project As dialog box. Enter lab2 as the project name.  Make sure that the Create Project Subdirectory option is checked, the project directory path is **{labs}** and click OK.
 This will create the lab2 directory and save the project and associated directory with lab2 name.
 
 ### Add Two Instances of GPIO
@@ -29,7 +29,7 @@ This will create the lab2 directory and save the project and associated director
 7.	Notice the additional *M_AXI_GPO* interface, and *M_AXI_GPO_ACLK*, *FCLK_CLK0*, and *FCLK_RESET0_N* ports are now included on the Zynq block. You can click the regenerate button to redraw the diagram to get something like this:
 
 <p align="center">
-<img src ="/pics/lab 2/1BlockAXI.JPG " width="40%" height="80%"/>
+<img src ="./pics/lab 2/1BlockAXI.JPG " width="40%" height="80%"/>
 </p>
 <p align = "center">
 <i>Zynq system with AXI and clock interfaces</i>
@@ -42,7 +42,7 @@ This will create the lab2 directory and save the project and associated director
 10.	Click on the AXI GPIO block to select it, and in the properties tab, change the name to **switches**
 
    <p align="center">
-   <img src ="/pics/lab 2/2AXIblockadd.JPG "  width="50%" height="80%"/>
+   <img src ="./pics/lab 2/2AXIblockadd.JPG "  width="50%" height="80%"/>
    </p>
    <p align = "center">
    <i>Change AXI GPIO default name</i>
@@ -50,8 +50,8 @@ This will create the lab2 directory and save the project and associated director
 
 11.	Double click on the _AXI GPIO block_ to open the customization window.
 
-12.	From the Board Interface drop down, select sws 8bits for _ZedBoard_, sws 4bits for _Zybo_ or sws 2bits for _PYNQ-Z2_ for **GPIO IP Interface**.
-13.	Next, click the IP configuration tab, and notice the width has already been set to match the switches on the *Zedboard* (8), *Zybo* (4) or *PYNQ-Z2* (2)  
+12.	From the Board Interface drop down, select sws 8bits for _ZedBoard_, sws 4bits for _Zybo_, sws 2bits for _PYNQ-Z1_ or sws 2bits for _PYNQ-Z2_ for **GPIO IP Interface**.
+13.	Next, click the IP configuration tab, and notice the width has already been set to match the switches on the *Zedboard* (8), *Zybo* (4), *PYNQ-Z1* (2) or *PYNQ-Z2* (2)  
 
 Notice that the peripheral can be configured for two channels, but, since we want to use only one channel without interrupt, leave the Enable Dual Channel and Enable Interrupt unchecked.  
 
@@ -60,7 +60,7 @@ Notice that the peripheral can be configured for two channels, but, since we wan
 16.	Click OK when prompted to automatically connect the master and slave interfaces
 
    <p align="center">
-   <img src ="/pics/lab 2/3Dsgnswauto.JPG "  width="60%" height="80%"/>
+   <img src ="./pics/lab 2/3Dsgnswauto.JPG "  width="60%" height="80%"/>
    </p>
    <p align = "center">
    <i>Design with switches automatically connected</i>
@@ -70,12 +70,12 @@ Notice that the peripheral can be configured for two channels, but, since we wan
 
 18.	Add another instance of the GPIO peripheral (Add IP). Name it as **buttons**
 
-19.	Double click on the IP block, select the _btns GPIO interface_ (btns_5bits for the _Zedboard_, btns_4bits for the _Zybo_ and btns 4bits for the _PYNQ-Z2_) and click OK.
+19.	Double click on the IP block, select the _btns GPIO interface_ (btns_5bits for the _Zedboard_, btns_4bits for the _Zybo_, btns 4bits for the _PYNQ-Z1_ and btns 4bits for the _PYNQ-Z2_) and click OK.
 At this point connection automation could be run, or the block could be connected manually. This time the block will be connected manually.
 20.	Double click on the _AXI Interconnect_ (name : ps7_0_axi_periph) and change the Number of **Master Interfaces** to 2 and click OK
 
     <p align="center">
-    <img src ="/pics/lab 2/4AXIrecust.JPG "  width="60%" height="80%"/>
+    <img src ="./pics/lab 2/4AXIrecust.JPG "  width="60%" height="80%"/>
     </p>
     <p align = "center">
     <i>Add master port to AXI Interconnect</i>
@@ -97,7 +97,7 @@ At this point connection automation could be run, or the block could be connecte
     The block diagram should look similar to this:
 
     <p align="center">
-    <img src ="/pics/lab 2/5AXIbuttsw.JPG "  width="70%" height="80%"/>
+    <img src ="./pics/lab 2/5AXIbuttsw.JPG "  width="70%" height="80%"/>
     </p>
     <p align = "center">
     <i>System Assembly View after Adding the Peripherals</i>
@@ -109,7 +109,7 @@ At this point connection automation could be run, or the block could be connecte
 Note that both peripherals are assigned in the address range of _0x40000000_ to _0x7FFFFFFF_ (GP0 range).
 
    <p align="center">
-   <img src ="/pics/lab 2/6AXIAdd.jpg"  width="70%" height="80%"/>
+   <img src ="./pics/lab 2/6AXIAdd.jpg"  width="70%" height="80%"/>
    </p>
    <p align = "center">
    <i>Peripherals Memory Map</i>
@@ -126,14 +126,14 @@ Note that both peripherals are assigned in the address range of _0x40000000_ to 
 3.	Select the gpio port and change the name to **switches** in its properties form.
 The width of the interface will be automatically determined by the upstream block.
 4.	For the buttons GPIO, click on the Run Connection Automation link.
-5.	In the opened GUI, select btns_5bits (for _ZedBoard_) or btns_4bits (for _Zybo_ and _PYNQ-Z2_) under the options section.
+5.	In the opened GUI, select btns_5bits (for _ZedBoard_) or btns_4bits (for _Zybo_, _PYNQ-Z1_ and _PYNQ-Z2_) under the options section.
 6.	Click OK.
-7.	Select the created external port and change its name as buttons
+7.	Select the created external port and change its name as **buttons**.
 8.	Run Design Validation (**Tools -> Validate Design**) and verify there are no errors.
 The design should now look similar to the diagram below
 
     <p align="center">
-    <img src ="/pics/lab 2/7Finaldsgn.JPG "  width="80%" height="80%"/>
+    <img src ="./pics/lab 2/7Finaldsgn.JPG "  width="80%" height="80%"/>
     </p>
     <p align = "center">
     <i>Completed design</i>
@@ -143,13 +143,13 @@ The design should now look similar to the diagram below
 2.	 In the shortcut Bar, select **I/O Planning** from the Layout dropdown menu
 
    <p align="center">
-   <img src ="/pics/lab 2/8iop.jpg"  width="30%" height="80%"/>
+   <img src ="./pics/lab 2/8iop.jpg"  width="30%" height="80%"/>
    </p>
    <p align = "center">
    <i>Switch to the IO planning view</i>
    </p>
 
-3.	In the I/O ports tab, expand the two GPIO icons, and expand *buttons_tri_i*, and *switches_tri_i*, and notice that the ports have been automatically assigned pin locations, along with the other Fixed IO ports in the design, and an I/O Std of _LVCMOS25_ (for *Zedboard*) and _LVCMOS33_ (for *Zybo* and *PYNQ-Z2*) has been applied. If they were not automatically applied, pin constraints can be included in a constraints file, or entered manually or modified through the I/O Ports tab.
+3.	In the I/O ports tab, expand the two GPIO icons, and expand *buttons_tri_i*, and *switches_tri_i*, and notice that the ports have been automatically assigned pin locations, along with the other Fixed IO ports in the design, and an I/O Std of _LVCMOS25_ (for *Zedboard*) and _LVCMOS33_ (for *Zybo*, *PYNQ-Z1* and *PYNQ-Z2*) has been applied. If they were not automatically applied, pin constraints can be included in a constraints file, or entered manually or modified through the I/O Ports tab.
 
 ### Generate Bitstream and Export to SDK
 
@@ -172,7 +172,7 @@ The design should now look similar to the diagram below
 7.	Name the project **TestApp**, select Use existing board support package, select  standalone_bsp_0 and click Next
 
     <p align="center">
-    <img src ="/pics/lab 2/9sdk.JPG "  width="60%" height="80%"/>
+    <img src ="./pics/lab 2/9sdk.JPG "  width="60%" height="80%"/>
     </p>
     <p align = "center">
     <i>Application Project settings</i>
@@ -198,7 +198,7 @@ This will create a new Application project using the created board support packa
 4.	You should see the something similar to the  following output on Terminal console
 
     <p align="center">
-    <img src ="/pics/lab 2/aop.jpg"  width="30%" height="80%"/>
+    <img src ="./pics/lab 2/aop.jpg"  width="30%" height="80%"/>
     </p>
     <p align = "center">
     <i> SDK Terminal output </i>

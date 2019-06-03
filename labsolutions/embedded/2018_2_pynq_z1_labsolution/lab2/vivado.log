@@ -1,0 +1,276 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jun  3 14:58:06 2019
+# Process ID: 2216
+# Current directory: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14244 D:\github\Embedded-System-Design-Flow-on-Zynq\labsolutions\embedded\2018_2_pynq_z1_labsolution\lab2\lab2.xpr
+# Log file: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/vivado.log
+# Journal file: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 895.957 ; gain = 131.680
+update_compile_order -fileset sources_1
+open_bd_design {D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Successfully read diagram <system> from BD file <D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 972.594 ; gain = 67.766
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {1} CONFIG.PCW_EN_CLK0_PORT {1} CONFIG.PCW_EN_RST0_PORT {1}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {2} CONFIG.C_ALL_INPUTS {1} CONFIG.GPIO_BOARD_INTERFACE {sws_2bits}] [get_bd_cells axi_gpio_0]
+regenerate_bd_layout
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_0/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_0/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_0/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_0/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_0/GPIO'
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+</axi_gpio_0/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41200000 [ 64K ]>
+regenerate_bd_layout
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+endgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {4} CONFIG.C_ALL_INPUTS {1} CONFIG.GPIO_BOARD_INTERFACE {btns_4bits}] [get_bd_cells axi_gpio_1]
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_0/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_0/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_0/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_0/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_0/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_1/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_1/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_1/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_1/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /axi_gpio_1/GPIO'
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_1/S_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_1/S_AXI]
+</axi_gpio_1/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41210000 [ 64K ]>
+regenerate_bd_layout
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+undo
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_1/S_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_1/S_AXI]'
+startgroup
+set_property -dict [list CONFIG.NUM_MI {2}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+set_property name switches [get_bd_cells axi_gpio_0]
+set_property name buttons [get_bd_cells axi_gpio_1]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins buttons/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins buttons/s_axi_aresetn] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+regenerate_bd_layout
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M01_AXI] [get_bd_intf_pins buttons/S_AXI]
+regenerate_bd_layout
+assign_bd_address [get_bd_addr_segs {buttons/S_AXI/Reg }]
+</buttons/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41210000 [ 64K ]>
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins buttons/GPIO]
+endgroup
+set_property name switches [get_bd_intf_ports GPIO_0]
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sws_2bits ( 2 Switches ) } Manual_Source {Auto}}  [get_bd_intf_pins switches/GPIO]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /switches]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE sws_2bits [get_bd_cells /switches]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 sws_2bits
+INFO: [board_rule 100-100] connect_bd_intf_net /sws_2bits /switches/GPIO
+undo
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sws_2bits ( 2 Switches ) } Manual_Source {Auto}}  [get_bd_intf_pins switches/GPIO]'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+undo
+INFO: [Common 17-17] undo 'set_property name switches [get_bd_intf_ports GPIO_0]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'make_bd_intf_pins_external  [get_bd_intf_pins buttons/GPIO]'
+INFO: [Common 17-17] undo 'startgroup'
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins switches/GPIO]
+endgroup
+set_property name switches [get_bd_intf_ports GPIO_0]
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /buttons/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /buttons/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /buttons/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /buttons/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /buttons/GPIO'
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {btns_4bits ( 4 Buttons ) } Manual_Source {Auto}}  [get_bd_intf_pins buttons/GPIO]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /buttons]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE btns_4bits [get_bd_cells /buttons]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 btns_4bits
+INFO: [board_rule 100-100] connect_bd_intf_net /btns_4bits /buttons/GPIO
+regenerate_bd_layout
+set_property name buttons [get_bd_intf_ports btns_4bits]
+validate_bd_design
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-1771] Block interface /buttons/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'btns_4bits'. This interface is connected to an external interface /buttons, whose name 'buttons' does not match with the board interface name 'btns_4bits'.
+This is a visual-only issue - this interface /buttons/GPIO will be connected to board interface 'btns_4bits'. If desired, please change the name of this port /buttons manually.
+generate_target all [get_files  D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /buttons/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'btns_4bits'. This interface is connected to an external interface /buttons, whose name 'buttons' does not match with the board interface name 'btns_4bits'.
+This is a visual-only issue - this interface /buttons/GPIO will be connected to board interface 'btns_4bits'. If desired, please change the name of this port /buttons manually.
+Wrote  : <D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+VHDL Output written to : D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block switches .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block buttons .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1284.520 ; gain = 170.621
+catch { config_ip_cache -export [get_ips -all system_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_gpio_0_0] }
+catch { config_ip_cache -export [get_ips -all system_rst_ps7_0_100M_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_gpio_1_0] }
+catch { config_ip_cache -export [get_ips -all system_xbar_0] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 8 {system_processing_system7_0_0_synth_1 system_axi_gpio_0_0_synth_1 system_rst_ps7_0_100M_0_synth_1 system_axi_gpio_1_0_synth_1 system_xbar_0_synth_1 system_auto_pc_0_synth_1}
+[Mon Jun  3 15:12:20 2019] Launched system_processing_system7_0_0_synth_1, system_axi_gpio_0_0_synth_1, system_rst_ps7_0_100M_0_synth_1, system_axi_gpio_1_0_synth_1, system_xbar_0_synth_1, system_auto_pc_0_synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.runs/system_processing_system7_0_0_synth_1/runme.log
+system_axi_gpio_0_0_synth_1: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.runs/system_axi_gpio_0_0_synth_1/runme.log
+system_rst_ps7_0_100M_0_synth_1: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.runs/system_rst_ps7_0_100M_0_synth_1/runme.log
+system_axi_gpio_1_0_synth_1: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.runs/system_axi_gpio_1_0_synth_1/runme.log
+system_xbar_0_synth_1: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.runs/system_xbar_0_synth_1/runme.log
+system_auto_pc_0_synth_1: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.runs/system_auto_pc_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/system.bd] -directory D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.ip_user_files/sim_scripts -ip_user_files_dir D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.ip_user_files -ipstatic_source_dir D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.cache/compile_simlib/modelsim} {questa=D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.cache/compile_simlib/questa} {riviera=D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.cache/compile_simlib/riviera} {activehdl=D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 8
+[Mon Jun  3 15:23:06 2019] Launched synth_1...
+Run output will be captured here: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.runs/synth_1/runme.log
+regenerate_bd_layout
+save_bd_design
+Wrote  : <D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+reset_run synth_1
+validate_bd_design -force
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-1771] Block interface /buttons/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'btns_4bits'. This interface is connected to an external interface /buttons, whose name 'buttons' does not match with the board interface name 'btns_4bits'.
+This is a visual-only issue - this interface /buttons/GPIO will be connected to board interface 'btns_4bits'. If desired, please change the name of this port /buttons manually.
+save_bd_design
+Wrote  : <D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+launch_runs synth_1 -jobs 8
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /buttons/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'btns_4bits'. This interface is connected to an external interface /buttons, whose name 'buttons' does not match with the board interface name 'btns_4bits'.
+This is a visual-only issue - this interface /buttons/GPIO will be connected to board interface 'btns_4bits'. If desired, please change the name of this port /buttons manually.
+VHDL Output written to : D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block switches .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block buttons .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/synth/system.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = e2e5db731179781d; cache size = 3.153 MB.
+[Mon Jun  3 15:55:23 2019] Launched synth_1...
+Run output will be captured here: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.runs/synth_1/runme.log
+regenerate_bd_layout
+save_bd_design
+Wrote  : <D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.dcp' for cell 'system_i/buttons'
+INFO: [Project 1-454] Reading design checkpoint 'd:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.dcp' for cell 'system_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'd:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.dcp' for cell 'system_i/switches'
+INFO: [Project 1-454] Reading design checkpoint 'd:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.dcp' for cell 'system_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp' for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [d:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/switches/U0'
+Finished Parsing XDC File [d:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/switches/U0'
+Parsing XDC File [d:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/switches/U0'
+Finished Parsing XDC File [d:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/switches/U0'
+Parsing XDC File [d:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [d:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [d:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [d:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [d:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc] for cell 'system_i/buttons/U0'
+Finished Parsing XDC File [d:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc] for cell 'system_i/buttons/U0'
+Parsing XDC File [d:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc] for cell 'system_i/buttons/U0'
+Finished Parsing XDC File [d:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc] for cell 'system_i/buttons/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1753.742 ; gain = 404.891
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.095 . Memory (MB): peak = 2196.281 ; gain = 8.910
+[Mon Jun  3 16:05:05 2019] Launched impl_1...
+Run output will be captured here: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.runs/impl_1/runme.log
+file copy -force D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.runs/impl_1/system_wrapper.sysdef D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk -hwspec D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk -hwspec D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.runs/impl_1/system_wrapper.sysdef D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk -hwspec D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk -hwspec D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.runs/impl_1/system_wrapper.sysdef D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk -hwspec D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk -hwspec D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab2/lab2.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  3 16:36:10 2019...
