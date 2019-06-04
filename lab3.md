@@ -14,12 +14,12 @@ After completing this lab, you will be able to:
 
 ### Create a Custom IP using the Create and Package IP Wizard
 
-1.	Open Vivado by selecting **Start > All Programs > Xilinx Design Tools > Vivado 2018.1 > Vivado 2018.1**
+1.	Open Vivado by selecting **Start > All Programs > Xilinx Design Tools > Vivado 2018.2 > Vivado 2018.2**
 2.	Click **Manage IP** and select New IP Location and click Next in the New IP Location window
-3.	Select Verilog as the Target Language, Mixed as the Simulator language, and for IP location, type **{labs}\led_ip** and click Finish (leave other settings as defaults and click OK if prompted to create the directory)
+3.	Select *Verilog* as the Target Language, Mixed as the Simulator language, and for IP location, type **{labs}\led_ip** and click Finish (leave other settings as defaults and click OK if prompted to create the directory)
 
      <p align="center">
-     <img src ="/pics/lab 3/1ipst.JPG" width="80%" height="80%"/>
+     <img src ="./pics/lab 3/1ipst.JPG" width="80%" height="80%"/>
      </p>
      <p align = "center">
      <i>New IP Location form</i>
@@ -29,14 +29,14 @@ After completing this lab, you will be able to:
 
 ###	Run the Create and Package IP Wizard
 
-1.	Select **Tools > Create and Package IP**
+1.	Select **Tools > Create and Package New IP...**
 2.	In the window, click Next
 3.	Select **Create a new AXI4 peripheral**, and click Next
 4.	Fill in the details for the IP
 
     Name: *led_ip*
 
-    Display Name: *led_ip_v1_0*
+    Display Name: *led_ip_v1.0*
 
     (Fill in a description, Vendor Name, and URL)
 
@@ -76,7 +76,7 @@ After completing this lab, you will be able to:
 ```
 
 
-6.	Save the file by selecting **File > Save File**
+6.	Save the file by right clicking and selecting **Save File**
 7.	Expand led_ip_v1_0 in the sources view if necessary, and open led_ip_v1_0_S_AXI.v
 8.	Add the LED parameter and port to this file too, at lines 7 and 18 (done in steps 2 ands 3)
 
@@ -98,7 +98,7 @@ After completing this lab, you will be able to:
    ```
   Check all the signals that are being connected and where they originate.
 
-10.	Save the file by selecting **File > Save File**
+10.	Save the file by right clicking and selecting **Save File**
 11.	Click on the Add Sources in the Flow Navigator pane, select Add or Create Design Sources, click Next, then click the Green Plus then Add Files…, browse to **{sources}\lab3**, select the lab3_user_logic.v file and click OK, and then click Finish to add the file.
 
     Check the contents of this file to understand the logic that is being implemented.  Notice the formed hierarchy.
@@ -115,7 +115,7 @@ After completing this lab, you will be able to:
 1.	Click on the Package IP – led_ip tab
 
    <p align="center">
-   <img src ="/pics/lab 3/2PackIP.JPG" width="80%" height="80%"/>
+   <img src ="./pics/lab 3/2PackIP.JPG" width="80%" height="80%"/>
    </p>
    <p align = "center">
    <i> Package IP</i>
@@ -129,7 +129,7 @@ After completing this lab, you will be able to:
 5.	Click the Blue Plus then **Add Family Explicitly…** from the menu.
 6.	Select the Zynq family as we will be using this IP on the PYNQ-Z2, Zybo and Zedboard, and click OK. You will get something like this:
     <p align="center">
-    <img src ="/pics/lab 3/3ipfam.JPG" width="50%" height="80%"/>
+    <img src ="./pics/lab 3/3ipfam.JPG" width="50%" height="80%"/>
     </p>
     <p align = "center">
     <i> Compatibility under Package IP</i>
@@ -138,7 +138,7 @@ After completing this lab, you will be able to:
  8.	Click on File Groups and click Merge changes from File Groups Wizard
 
     <p align="center">
-    <img src ="/pics/lab 3/4ipfile.JPG" width="60%" height="80%"/>
+    <img src ="./pics/lab 3/4ipfile.JPG" width="60%" height="80%"/>
     </p>
     <p align = "center">
     <i> Compatibility under Package IP</i>
@@ -154,7 +154,7 @@ Notice that the Ports and Interfaces view now shows the user created LED port
 12.	Select Customization GUI and notice that the Led Width is visible.
 
     <p align="center">
-    <img src ="/pics/lab 3/5ipcustomzn.JPG" width="75%" height="80%"/>
+    <img src ="./pics/lab 3/5ipcustomzn.JPG" width="75%" height="80%"/>
     </p>
     <p align = "center">
     <i> Customization GUI under Package IP</i>
@@ -167,7 +167,7 @@ Notice that the Ports and Interfaces view now shows the user created LED port
 ### Modify the Project Settings
 
 1.	Start the Vivado if necessary and open either the lab2 project you created in the previous lab or the lab2 project in the labsolution directory
-2.	Select **File > Save Project As…** to open the Save Project As dialog box. Enter lab3 as the project name.  Make sure that the Create Project Subdirectory option is checked, the project directory path is {labs}\ and click OK.
+2.	Select **File > Project > Save As…** to open the Save Project As dialog box. Enter lab3 as the project name.  Make sure that the Create Project Subdirectory option is checked, the project directory path is {labs}\ and click OK.
 This will create the lab3 directory and save the project and associated directory with lab3 name.
 3.	Click **Settings** in the Flow Navigator pane.
 4.	Select **IP > Repository** in the left pane of the Project Settings form.
@@ -176,7 +176,7 @@ The led_ip_v1.0 IP will appear the IP in the Selected Repository window.
 
 
     <p align="center">
-    <img src ="/pics/lab 3/6chooseip.JPG" width="60%" height="80%"/>
+    <img src ="./pics/lab 3/6chooseip.JPG" width="60%" height="80%"/>
     </p>
     <p align = "center">
     <i> Specify IP Repository </i>
@@ -191,7 +191,7 @@ The led_ip_v1.0 IP will appear the IP in the Selected Repository window.
 3.	Double-click led_ip_v1_0 to add the core to the design.
 4.	Select the IP in the block diagram and change the instance name to led_ip in the properties view.
 5.	Double click the block to open the configuration properties
-6.	For the _ZedBoard_, leave the Led Width set to 8, or for the _Zybo_ and _PYNQ-Z2_, set the width to 4.
+6.	For the _ZedBoard_, leave the Led Width set to 8, or for the _Zybo_,  _PYNQ-Z1_ and _PYNQ-Z2_, set the width to 4.
 7.	Click OK.
 8.	Click on Run Connection Automation, select **/led_ip/S_AXI** and click OK to automatically make the connection from the AXI Interconnect to the IP.
 
@@ -199,14 +199,15 @@ The led_ip_v1.0 IP will appear the IP in the Selected Repository window.
 9.	Select the LED port on the led_ip instance (by clicking on its pin), right-click and select **Make External**.
 
     <p align="center">
-    <img src ="/pics/lab 3/7LEDext.JPG" width="70%" height="80%"/>
+    <img src ="./pics/lab 3/7LEDext.JPG" width="70%" height="80%"/>
     </p>
     <p align = "center">
     <i> LED external port added and connected </i>
     </p>
 
+10.	Click on the LED_0 to select it, and in the properties tab, change the name to **LED**
 
-10.	Select the Address Editor tab and verify that an address has been assigned to led_ip.
+11.	Select the Address Editor tab and verify that an address has been assigned to led_ip.
 
 1.	In the Block Diagram, Right click and select the Add IP option. Search for _BRAM_ and add one instance of the _AXI BRAM Controller_
 2.	Run Connection Automation on **axi_bram_ctrl_0/S_AXI** and click OK when prompted to connect it to the M_AXI_GP0 Master.
@@ -217,7 +218,7 @@ Notice that the AXI Protocol being used is AXI4 instead of AXI4Lite since BRAM c
 The design should look similar to the figure below.
 
   <p align="center">
-  <img src ="/pics/lab 3/8Completeblck.JPG" width="90%" height="80%"/>
+  <img src ="./pics/lab 3/8Completeblck.JPG" width="90%" height="80%"/>
   </p>
   <p align = "center">
   <i> Completed Block Diagram </i>
@@ -227,7 +228,7 @@ The design should look similar to the figure below.
 7.	Press **F6** to validate the design one last time.
 
 1.	Click **Add Sources** in the Flow Navigator pane, select **Add or Create Constraints**, and click Next.
-2.	Click the Blue Plus button, and then **Add Files…**, browse to the **{sources}\lab3** folder, select lab3_zed.xdc for the _ZedBoard_, lab3_pynq_z2.xdc for _PYNQ-Z2_ or lab3_Zybo.xdc  for the _Zybo_
+2.	Click the Blue Plus button, and then **Add Files…**, browse to the **{sources}\lab3** folder, select lab3_zed.xdc for the _ZedBoard_, lab3_pynq_z1.xdc for _PYNQ-Z1_, lab3_pynq_z2.xdc for _PYNQ-Z2_ or lab3_Zybo.xdc  for the _Zybo_
 3.	Click **Finish** to add the file.
 4.	Expand Constraints folder in the Sources pane, and double click the **lab3_*.xdc** file entry to see its content. This file contains the pin locations and IO standards for the LEDs on the _Zynq_ board. This information can usually be found in the manufacturer’s datasheet for the board.
 5.	Right click on system.bd and select Generate output products
