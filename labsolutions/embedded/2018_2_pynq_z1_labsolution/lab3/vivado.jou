@@ -16,3 +16,5 @@ save_project_as lab4 D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/
 file copy -force D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4/lab4.runs/impl_1/system_wrapper.sysdef D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4/lab4.sdk/system_wrapper.hdf
 
 launch_sdk -workspace D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4/lab4.sdk -hwspec D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4/lab4.sdk/system_wrapper.hdf
+save_project_as lab5 D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab5 -force
+launch_sdk -workspace D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab5/lab5.sdk -hwspec D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab5/lab5.sdk/system_wrapper.hdf

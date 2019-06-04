@@ -204,7 +204,7 @@ This will create a new Application project using the created board support packa
     <i> SDK Terminal output </i>
     </p>
 
-5.	Select Console tab and click on the Terminate button ( ) to stop the program
+5.	Select Console tab and click on the Terminate button to stop the program
 6.	Close SDK and Vivado programs by selecting **File > Exit** in each program
 7.	Power OFF the board
 
