@@ -219,8 +219,9 @@ Note:  Since we do not have any hardware in Programmable Logic (PL) there is no 
     </p>
     <p align = "center">
     <i> SDK Terminal Output </i>
-    </p>  
-1.	Close SDK and Vivado  by selecting  **File > Exit**  in each program.
+    </p>
+
+8. Close SDK and Vivado  by selecting **File > Exit** in each program.
 
 ## Conclusion
 
