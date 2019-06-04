@@ -14,7 +14,7 @@ After completing this lab, you will be able to:
 ### Opening the Project
 
 1.	Start the Vivado if necessary and open either the lab3 project (lab3.xpr) you created in the previous lab or the lab3 project in the **{labsolutions}** directory using the Open Project link in the Getting Started page.
-2.	Select **File > Save Project As…** to open the Save Project As dialog box. Enter lab4 as the project name.  Make sure that the Create Project Subdirectory option is checked, the project directory path is {labs} and click OK.
+2.	Select **File > Project > Save As…** to open the Save Project As dialog box. Enter lab4 as the project name.  Make sure that the Create Project Subdirectory option is checked, the project directory path is {labs} and click OK.
 
 This will create the lab4 directory and save the project and associated directory with lab4 name.
 
@@ -25,7 +25,7 @@ This will create the lab4 directory and save the project and associated director
 3.	Select **File > Launch SDK** and click OK.
 1.	To tidy up the workspace and save unnecessary building of a project that is not being used, right click on the _TestApp_, _standalonebsp0_, and the *system_wrapper_hw_platform_1* projects from the previous lab, and click Close Project, as these projects will not be used in this lab. They can be reopened later if needed.
 2.	Select **File > New > Application Project**.
-3.	Enter lab4 as the Project Name, and for Board Support Package, choose Create New **lab4_bsp** (should be the only option).
+3.	Enter **lab4** as the Project Name, and for Board Support Package, choose Create New **lab4_bsp** (should be the only option).
 4.	Click Next, and select **Empty Application** and click Finish.
 5.	Expand lab4 in the project view and right-click in the src folder and select Import.
 6.	Expand General category and double-click on File System.
@@ -35,7 +35,7 @@ This will create the lab4 directory and save the project and associated director
 10.	Click on **Documentation** link corresponding to buttons peripheral under the Peripheral Drivers section to open the documentation in a default browser window.  As our led_ip is very similar to GPIO, we look at the mentioned documentation.
 
     <p align="center">
-    <img src ="/pics/lab 4/1drvdoc.JPG" width="80%" height="80%"/>
+    <img src ="./pics/lab 4/1drvdoc.JPG" width="80%" height="80%"/>
     </p>
     <p align = "center">
     <i>Accessing device driver documentation</i>
@@ -46,7 +46,7 @@ This will create the lab4 directory and save the project and associated director
 13.	Double click on _xgpio.h_ in the Outline view on the right of the screen and review the contents of the file to see the available function calls for the GPIO.
 
     <p align="center">
-    <img src ="/pics/lab 4/2outlinevw.JPG" width="40%" height="80%"/>
+    <img src ="./pics/lab 4/2outlinevw.JPG" width="40%" height="80%"/>
     </p>
     <p align = "center">
     <i>Outline View</i>
@@ -132,7 +132,7 @@ This will create the lab4 directory and save the project and associated director
 3.	If the led_ip driver has not already been selected, select Generic under the Driver column for led_ip to access the dropdown menu. From the dropdown menu, select led_ip, and click OK.
 
     <p align="center">
-    <img src ="/pics/lab 4/3assigndrv.JPG" width="80%" height="80%"/>
+    <img src ="./pics/lab 4/3assigndrv.JPG" width="80%" height="80%"/>
     </p>
     <p align = "center">
     <i> Assign led_ip driver </i>
@@ -235,7 +235,7 @@ You can determine your directory path and the current directory contents by usin
 You should see results similar to that below:
 
     <p align="center">
-    <img src ="/pics/lab 4/4shellop.JPG" width="80%" height="80%"/>
+    <img src ="./pics/lab 4/4shellop.JPG" width="80%" height="80%"/>
     </p>
     <p align = "center">
     <i> Object dump results - .text, .stack, and .heap in the DDR3 space </i>
@@ -252,7 +252,7 @@ You should see results similar to that below:
 3.	Select lab4 in Project Explorer, right-click and select **Run As > Launch on Hardware (System Debugger)** to download the application, execute ps7_init, and execute lab4.elf
 
     <p align="center">
-    <img src ="/pics/lab 4/5sdkop.JPG" width="30%" height="80%"/>
+    <img src ="./pics/lab 4/5sdkop.JPG" width="30%" height="80%"/>
     </p>
     <p align = "center">
     <i> DIP switch and Push button settings displayed in SDK terminal </i>
@@ -265,7 +265,7 @@ Note that all four major sections, code, data, stack and heap are to be assigned
 2.	In the Basic Tab change the Code and Data sections to **ps7_ddr_0**, leaving the Heap and Stack in section to **axi_bram_ctrl_0_S_AXI_BASEADDR** memory and click **Generate**, and click Yes to overwrite.
 
      <p align="center">
-     <img src ="/pics/lab 4/6bram.JPG" width="71%" height="80%"/>
+     <img src ="./pics/lab 4/6bram.JPG" width="71%" height="80%"/>
      </p>
      <p align = "center">
      <i> Targeting Stack/Heap sections to BRAM </i>
@@ -277,7 +277,7 @@ Note that all four major sections, code, data, stack and heap are to be assigned
     You should see results similar to that below:
 
     <p align="center">
-    <img src ="/pics/lab 4/7shellop.jpg" width="60%" height="80%"/>
+    <img src ="./pics/lab 4/7shellop.jpg" width="60%" height="80%"/>
     </p>
     <p align = "center">
     <i>The .heap and .stack sections targeted to BRAM whereas the rest of the application is in DDR </i>

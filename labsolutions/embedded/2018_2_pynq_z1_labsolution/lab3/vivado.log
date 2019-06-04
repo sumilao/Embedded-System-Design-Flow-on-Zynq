@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jun  4 09:20:27 2019
+# Process ID: 4128
+# Current directory: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3268 D:\github\Embedded-System-Design-Flow-on-Zynq\labsolutions\embedded\2018_2_pynq_z1_labsolution\lab3\lab3.xpr
+# Log file: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab3/vivado.log
+# Journal file: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab3/lab3.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab3'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/led_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 894.742 ; gain = 196.871
+update_compile_order -fileset sources_1
+save_project_as lab4 D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4 -force
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4'
+save_project_as: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 899.219 ; gain = 0.000
+file copy -force D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4/lab4.runs/impl_1/system_wrapper.sysdef D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4/lab4.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4/lab4.sdk -hwspec D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4/lab4.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4/lab4.sdk -hwspec D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4/lab4.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.

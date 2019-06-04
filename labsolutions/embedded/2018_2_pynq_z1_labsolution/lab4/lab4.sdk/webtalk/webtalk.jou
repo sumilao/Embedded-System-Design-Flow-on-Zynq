@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# 
+# Start of session at: Tue Jun  4 09:53:06 2019
+# Process ID: 11424
+# Current directory: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4/lab4.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4/lab4.sdk/webtalk/webtalk.log
+# Journal file: D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z1_labsolution/lab4/lab4.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
