@@ -1,0 +1,372 @@
+!SESSION 2019-06-04 15:37:44.281 -----------------------------------------------
+eclipse.buildId=2018.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk
+
+This is a continuation of log file D:\github\Embedded-System-Design-Flow-on-Zynq\labsolutions\embedded\2018_2_pynq_z2_labsolution\lab4\lab4.sdk\.metadata\.bak_0.log
+Created Time: 2019-06-04 16:07:36.790
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.793
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.796
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.803
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.806
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.823
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.826
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.833
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.836
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.851
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.854
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.865
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.869
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.887
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.890
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.916
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.919
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.922
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.926
+!MESSAGE XSCT Command: [source D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/ps7_init.tcl], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.931
+!MESSAGE XSCT command with result: [source D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/ps7_init.tcl], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.934
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.954
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.957
+!MESSAGE XSCT Command: [loadhw -hw D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.986
+!MESSAGE XSCT command with result: [loadhw -hw D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper_0]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.989
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.993
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:36.996
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.028
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.031
+!MESSAGE XSCT Command: [stop], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.063
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.066
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.273
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.276
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.286
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.289
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.310
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.312
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.367
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.370
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.397
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.400
+!MESSAGE XSCT Command: [dow D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4/Debug/lab4.elf], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.508
+!MESSAGE XSCT command with result: [dow D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4/Debug/lab4.elf], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.511
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.515
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.614
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.714
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.718
+!MESSAGE XSCT Command: [con], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:07:37.732
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:12.451
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:12.466
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf ], Result: [null, axi_bram_ctrl_0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:12.470
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:12.474
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:12.477
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:12.485
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:12.488
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:12.495
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:12.498
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:12.515
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:12.518
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:12.539
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:12.541
+!MESSAGE XSCT Command: [fpga -file D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:14.869
+!MESSAGE XSCT command with result: [fpga -file D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:15.672
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:20:15.678
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf ], Result: [null, axi_bram_ctrl_0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:16.367
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:16.372
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:16.376
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:16.380
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:16.383
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:16.387
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:19.610
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:19.616
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:19.620
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:19.625
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:19.744
+!MESSAGE XSCT Command: [::hsi::utils::lg_init D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:19.748
+!MESSAGE XSCT command with result: [::hsi::utils::lg_init D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/system_wrapper_hw_platform_2/system.hdf D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4_bsp/system.mss], Result: [null, lg1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:19.752
+!MESSAGE XSCT Command: [::hsi::utils::lg_get_memories -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:19.756
+!MESSAGE XSCT command with result: [::hsi::utils::lg_get_memories -json], Result: [null, {"axi_bram_ctrl_0_Mem0": {"base_addr": "0x40000000",
+"size": "0x2000",
+},
+"ps7_ddr_0": {"base_addr": "0x100000",
+"size": "0x1FF00000",
+},
+"ps7_ram_0": {"base_addr": "0x0",
+"size": "0x30000",
+},
+"ps7_ram_1": {"base_addr": "0xFFFF0000",
+"size": "0xFE00",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:19.762
+!MESSAGE XSCT Command: [::hsi::utils::lg_get_sections -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:19.771
+!MESSAGE XSCT command with result: [::hsi::utils::lg_get_sections -json], Result: [null, {"code_sections": ".text:0x0::axi_bram_ctrl_0_Mem0:ps7_ddr_0:ps7_ram_0:ps7_ram_1",
+"data_sections": ".rodata:0x0::axi_bram_ctrl_0_Mem0:ps7_ddr_0:ps7_ram_0:ps7_ram_1 .rodata1:0x0::axi_bram_ctrl_0_Mem0:ps7_ddr_0:ps7_ram_0:ps7_ram_1 .sdata2:0x0::axi_bram_ctrl_0_Mem0:ps7_ddr_0:ps7_ram_0:ps7_ram_1 .sbss2:0x0::axi_bram_ctrl_0_Mem0:ps7_ddr_0:ps7_ram_0:ps7_ram_1 .data:0x0::axi_bram_ctrl_0_Mem0:ps7_ddr_0:ps7_ram_0:ps7_ram_1 .data1:0x0::axi_bram_ctrl_0_Mem0:ps7_ddr_0:ps7_ram_0:ps7_ram_1 .fixup:0x0::axi_bram_ctrl_0_Mem0:ps7_ddr_0:ps7_ram_0:ps7_ram_1 .sdata:0x0::axi_bram_ctrl_0_Mem0:ps7_ddr_0:ps7_ram_0:ps7_ram_1 .sbss:0x0::axi_bram_ctrl_0_Mem0:ps7_ddr_0:ps7_ram_0:ps7_ram_1 .bss:0x0::axi_bram_ctrl_0_Mem0:ps7_ddr_0:ps7_ram_0:ps7_ram_1",
+"stack_section": "stack:0x2000::axi_bram_ctrl_0_Mem0:ps7_ddr_0:ps7_ram_0:ps7_ram_1",
+"heap_section": "heap:0x2000::axi_bram_ctrl_0_Mem0:ps7_ddr_0:ps7_ram_0:ps7_ram_1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.048
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .text -mem ps7_ddr_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.052
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .text -mem ps7_ddr_0], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.056
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .rodata -mem ps7_ddr_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.060
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .rodata -mem ps7_ddr_0], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.063
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .rodata1 -mem ps7_ddr_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.067
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .rodata1 -mem ps7_ddr_0], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.070
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .sdata2 -mem ps7_ddr_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.074
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .sdata2 -mem ps7_ddr_0], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.077
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .sbss2 -mem ps7_ddr_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.081
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .sbss2 -mem ps7_ddr_0], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.083
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .data -mem ps7_ddr_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.091
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .data -mem ps7_ddr_0], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.093
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .data1 -mem ps7_ddr_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.097
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .data1 -mem ps7_ddr_0], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.100
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .fixup -mem ps7_ddr_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.104
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .fixup -mem ps7_ddr_0], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.107
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .sdata -mem ps7_ddr_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.111
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .sdata -mem ps7_ddr_0], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.114
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .sbss -mem ps7_ddr_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.118
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .sbss -mem ps7_ddr_0], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.121
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .bss -mem ps7_ddr_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.125
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .bss -mem ps7_ddr_0], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.128
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec heap -mem axi_bram_ctrl_0_Mem0 -size 1024], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.132
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec heap -mem axi_bram_ctrl_0_Mem0 -size 1024], Result: [null, 1024]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.135
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec stack -mem axi_bram_ctrl_0_Mem0 -size 1024], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.139
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec stack -mem axi_bram_ctrl_0_Mem0 -size 1024], Result: [null, 1024]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.143
+!MESSAGE XSCT Command: [::hsi::utils::lg_generate D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4/src/lscript.ld], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.150
+!MESSAGE XSCT command with result: [::hsi::utils::lg_generate D:/github/Embedded-System-Design-Flow-on-Zynq/labsolutions/embedded/2018_2_pynq_z2_labsolution/lab4/lab4.sdk/lab4/src/lscript.ld], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.336
+!MESSAGE XSCT Command: [::hsi::utils::lg_delete], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:25:28.339
+!MESSAGE XSCT command with result: [::hsi::utils::lg_delete], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-06-04 16:26:40.098
+!MESSAGE Executed Webtalk command
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:26:40.120
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-193
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-04 16:26:40.125
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-193

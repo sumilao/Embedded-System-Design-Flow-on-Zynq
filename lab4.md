@@ -228,7 +228,7 @@ int main (void)
 
 ### Analyze Assembled Object Files
 
-1.	Launch the shell from SDK by selecting **Xilinx Tools > Launch Shell**.
+1.	Launch the shell from SDK by selecting **Xilinx > Launch Shell**.
 2.	Change the directory to **lab4\Debug** using the cd command in the shell.
 You can determine your directory path and the current directory contents by using the pwd and dir commands.
 3.	Type **arm-none-eabi-objdump –h lab4.elf** at the prompt in the shell window to list various sections of the program, along with the starting address and size of each section
@@ -247,7 +247,7 @@ You should see results similar to that below:
 2.	Select the   tab.  If it is not visible then select **Window > Show view > Other.. > Terminal**.
 3.	Click on the connect button and if required, select appropriate COM port (depends on your computer), and configure it with the parameters as shown. (These settings may have been saved from previous lab).
 
-1.	Select **Xilinx Tools > Program FPGA**.
+1.	Select **Xilinx > Program FPGA**.
 2.	Click the Program button to program the FPGA.
 3.	Select lab4 in Project Explorer, right-click and select **Run As > Launch on Hardware (System Debugger)** to download the application, execute ps7_init, and execute lab4.elf
 

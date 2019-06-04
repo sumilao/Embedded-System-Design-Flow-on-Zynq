@@ -190,7 +190,7 @@ Look at the *XScuTimer_LookupConfig( )* and *XScuTimer_CfgInitialize( )* API fun
 1.	Make sure that micro-USB cable(s) is(are) connected between the board and the PC. Turn ON the power
 2.	Select **Window > Show view > Others.. > Terminal**.
 3.	Click on the connect button and if required, select appropriate _COM_ port (depends on your computer), and configure it with the parameters as shown. (These settings may have been saved from previous lab).
-1.	Select **Xilinx Tools > Program FPGA**.
+1.	Select **Xilinx > Program FPGA**.
 2.	Click the Program button to program the FPGA.
 3.	Select lab5 in Project Explorer, right-click and select **Run As > Launch on Hardware (System Debugger)** to download the application, execute *ps7_init*, and execute *lab5.elf*
 

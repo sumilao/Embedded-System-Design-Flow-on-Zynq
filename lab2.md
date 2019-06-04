@@ -191,7 +191,7 @@ This will create a new Application project using the created board support packa
 1.	Make sure that micro-USB cable(s) is(are) connected between the board and the PC. Turn ON the power of the board.
 2.	Open Terminal from **Window > Show View > Other..**
 3.	Click on the connect button and if required, select appropriate COM port (depends on your computer), and configure it with the parameters as shown in lab1. (These settings may have been saved from previous lab, lab1)
-1.	Select **Xilinx Tools > Program FPGA**
+1.	Select **Xilinx > Program FPGA**
 
 2.	Click Program to download the hardware bitstream.  When FPGA is being programmed, the DONE LED (green color) will be off, and will turn on again when the FPGA is programmed
 3.	Select TestApp in Project Explorer, right-click and select **Run As > Launch on Hardware** (System Debugger) to download the application, execute *ps7_init*, and execute *TestApp.elf*
